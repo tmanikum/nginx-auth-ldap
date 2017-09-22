@@ -41,7 +41,9 @@
 #pragma clang diagnostic warning "-W#warnings"
 #else
 #ifdef __GNUC__
+#if GNUC > 4
 #pragma GCC diagnostic warning "-Wcpp"
+#endif
 #endif
 #endif
 // TODO: do the same stuff for MSVC and/or other compilers
